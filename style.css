@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #343a40;
+}
+
+/* CONTAINER */
+
+.container {
+  margin: 0 50px;
+}
+/* NAV */
+.main-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 10px;
+  height: 40px;
+  margin-bottom: 50px;
+  color: #495057;
+}
+
+.img-logo {
+  width: 40px;
+  height: 40px;
+  background-image: url("images/leaf.jpg");
+  background-size: cover;
+  transition: background-image 0.7s ease-in-out;
+}
+
+.img-logo:hover {
+  background-image: url("images/buddha.svg");
+  width: 60px;
+}
+
+.nav-logo-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links-list-container {
+  height: 100%;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links-list:link,
+.nav-links-list:visited {
+  text-decoration: none;
+  color: #495057;
+}
+
+.nav-links-list:active,
+.nav-links-list:hover {
+  color: #40c057;
+  transition: all, 0.3s;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  margin-bottom: 100px;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 54px;
+  word-wrap: break-word;
+}
+
+.hero-button-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  width: 180px;
+  height: 50px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.button-video {
+  width: 24px;
+  height: 24px;
+}
+.button-get-started:link,
+.button-get-started:visited {
+  color: #fff;
+  background-color: #868e96;
+}
+
+.button-get-started:active,
+.button-get-started:hover {
+  color: #fff;
+  background-color: #adb5bd;
+  transition: all, 0.3s;
+}
+
+.button-start-meditate:link,
+.button-start-meditate:visited {
+  color: #fa5252;
+  background-color: #ffe3e3;
+}
+
+.button-start-meditate:active,
+.button-start-meditate:hover {
+  color: #fff5f5;
+  background-color: #ff8787;
+  transition: all, 0.3s;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-meditation {
+  width: 500px;
+}
+
+/* INFO SECTION */
+
+.section-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.info-heading {
+  text-align: center;
+  margin-bottom: 27px;
+  font-size: 32px;
+}
+
+.info-para-container {
+  max-width: 650px;
+}
+
+.info-para {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.info-para-1 {
+  margin-bottom: 20px;
+}
+
+/* FEATURE SECTION */
+
+.section-feature {
+  margin-bottom: 100px;
+}
+
+.feature-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 45px;
+}
+
+.feature-box-heading {
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-box-container {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 25px;
+  row-gap: 40px;
+  font-size: 17px;
+}
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: red;
+  border-radius: 15px;
+  padding: 22px 30px;
+}
+
+.feature-box-1 {
+  background-color: #ffd43b;
+}
+
+.feature-box-2 {
+  background-color: #69db7c;
+}
+
+.feature-box-3 {
+  background-color: #74c0fc;
+}
+
+.feature-box-4 {
+  background-color: #f783ac;
+}
+
+.feature-box p {
+  line-height: 1.5;
+}
+
+.feature-box-heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-box-icon {
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.feature-icon-2 {
+  width: 60px;
+  margin-bottom: -10px;
+}
+
+/* Instruction Section */
+
+.instruction-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.instruction-container {
+  max-width: 900px;
+}
+
+.instruction-heading {
+  text-align: center;
+  margin-bottom: 27px;
+  font-size: 32px;
+}
+
+.instruction-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 30px;
+}
+
+.instruction-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: -20px;
+}
+
+.instruction-content {
+  font-size: 17px;
+}
+
+.instruction-text-1 {
+  margin-top: 20px;
+}
+
+.instruction-text-1,
+.instruction-text-2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.instruction-text-2 {
+  margin-bottom: 20px;
+}
+
+.instruction-tips-header {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.instruction-tips-1,
+.instruction-tips-2 {
+  margin-bottom: 2px;
+  line-height: 1.5;
+}
+
+.instruction-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.instruction-tips li {
+  list-style: none;
+}
+
+/* FOOTER */
+
+.main-footer {
+  height: 40px;
+  background-color: #e3fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #495057;
+}
+
+.footer-copyright {
+  margin-left: 20px;
+}
+
+.footer-text {
+  margin-right: 25px;
+}
+
+.footer-citations,
+.footer-credits {
+  text-decoration: none;
+  color: #495057;
+}
+
+.footer-credits {
+  margin-left: 10px;
+}
+
+/* MEDIA QUERY*/
+
+@media (max-width: 650px) {
+  .section-info .info-heading {
+    text-align: left;
+  }
+
+  .section-feature .feature-heading {
+    text-align: left;
+  }
+
+  .section-feature .feature-box-heading {
+    text-align: left;
+  }
+
+  .section-feature .feature-box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-feature .feature-box {
+    align-items: start;
+  }
+
+  .section-feature .feature-box-icon {
+    align-self: start;
+  }
+
+  .instruction-section .instruction-content {
+    grid-template-columns: 1fr;
+  }
+
+  .instruction-section .instruction-img {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .instruction-section .instruction-content {
+    grid-template-columns: 1fr;
+  }
+
+  .instruction-section .instruction-img {
+    width: 70%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 650px) {
+  .instruction-section .instruction-content {
+    grid-template-columns: 1fr;
+  }
+
+  .instruction-section .instruction-img {
+    width: 55%;
+    margin-top: 40px;
+  }
+
+  .instruction-text-1 {
+    margin-top: 0;
+  }
+
+  .instruction-heading {
+    text-align: left;
+  }
+}
